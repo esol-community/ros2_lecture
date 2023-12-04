@@ -1,0 +1,6 @@
+@startuml service_comm
+
+Client ->> Server: 処理のリクエスト
+Server --> Client: 処理結果のレスポンス
+
+@enduml

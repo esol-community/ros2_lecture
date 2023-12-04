@@ -41,7 +41,7 @@ ROS 2のデータ型としては、例えば以下が挙げられる。
 - カメラ画像を表す`sensor_msgs::msg::Image`型
 - パスを表す`nav_msgs::msg::Path`型
 
-![トピック通信の模式図](https://github.com/esol-community/ros2_lecture/tree/main/beginner/pub_sub_comm/img/rqt_graph.png)
+![トピック通信の模式図](https://raw.githubusercontent.com/esol-community/ros2_lecture/main/beginner/pub_sub_comm/img/rqt_graph.png)
 
 ## 前準備
 
@@ -256,7 +256,7 @@ ros2 run pub_sub_comm talker
 
 simple_talkerを実行させたターミナルからはメッセージをpublishしている表示が現れる。それと同時にsimple_listenerを実行させたターミナルからsubscribeしているメッセージが表示される。これにより`/chatter`トピックが正しく送受信できていることが確認できる。
 
-![result_pubsub](img/result_pubsub.png)
+![result_pubsub](https://raw.githubusercontent.com/esol-community/ros2_lecture/main/beginner/pub_sub_comm/img/result_pubsub.png)
 
 ## ROS 1とROS 2の違い
 

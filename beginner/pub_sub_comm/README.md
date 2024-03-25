@@ -166,7 +166,7 @@ subscriberは、publisherと同様に`rclcpp::Node`クラスが持つ関数`crea
 ### 依存関係の設定
 
 パッケージを作成すると`package.xml`というファイルが自動で生成される。このファイルにはパッケージ全体のメタデータを記述する。  
-package.xmlの全体像は[こちら](https://github.com/esol-community/ros2_lecture/tree/main/beginner/pub_sub_comm/package.xml)。（ただし、リンク先のファイルには以降の講座で追記する内容も含まれている。コピペした場合、この記事では不要な依存関係を記載することになる）  
+package.xmlの全体像は[こちら](https://github.com/esol-community/ros2_lecture/tree/main/beginner/pub_sub_comm/package.xml)。
 
 以下、自動生成されたファイルから変更した部分を説明する。
 
@@ -190,7 +190,7 @@ package.xmlの全体像は[こちら](https://github.com/esol-community/ros2_lec
 ### CMakeLists.txtの設定
 
 パッケージを作成するときに`--build-type ament_cmake`というオプションを指定すると`CMakeLists.txt`というファイルが自動で生成される。このファイルにはCMakeでのビルド設定を記述する。  
-CMakeLists.txtの全体像は[こちら](https://github.com/esol-community/ros2_lecture/tree/main/beginner/pub_sub_comm/CMakeLists.txt)。（ただし、リンク先のファイルには以降の講座で追記する内容も含まれているため、コピペするとエラーが発生する）  
+CMakeLists.txtの全体像は[こちら](https://github.com/esol-community/ros2_lecture/tree/main/beginner/pub_sub_comm/CMakeLists.txt)。
 
 以下、追記した部分について説明する。
 

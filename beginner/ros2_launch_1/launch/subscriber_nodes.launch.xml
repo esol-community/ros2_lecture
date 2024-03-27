@@ -1,0 +1,11 @@
+<launch>
+    <!-- subscriber nodeを、"listener_renamed1"という名前で定義 -->
+    <node pkg="pub_sub_comm" exec="listener" name="listener_renamed1" namespace="namespace_app1">
+        <remap from="chatter" to="chatter_app1"/>
+    </node>
+
+    <!-- subscriber nodeを、"listener_renamed2"という名前で定義 -->
+    <node pkg="pub_sub_comm" exec="listener" name="listener_renamed2" namespace="namespace_app2">
+        <remap from="chatter" to="chatter_app2"/>
+    </node>
+</launch>

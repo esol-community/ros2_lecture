@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>ros2_launch_2</name>
+  <version>0.0.1</version>
+  <description>Examples of launch system</description>
+  <maintainer email="maintainer@example.com">Maintainer Name</maintainer>
+  <license>2-Clause BSD License</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>pub_sub_comm</depend>
+  <depend>ros2_launch_1</depend>
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <exec_depend>ros2launch</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

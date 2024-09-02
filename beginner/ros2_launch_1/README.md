@@ -174,7 +174,7 @@ touch publisher_nodes.launch.xml
     </node>
 
     <!-- publisher nodeを、"talker_renamed2"という名前で定義 -->
-    <node pkg="pub_sub_comm" exec="talker" name="talker_renamed2" namespace="namespace_app1">
+    <node pkg="pub_sub_comm" exec="talker" name="talker_renamed2" namespace="namespace_app2">
         <remap from="chatter" to="chatter_app2"/>
     </node>
 </launch>

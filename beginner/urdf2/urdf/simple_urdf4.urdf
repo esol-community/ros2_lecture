@@ -1,0 +1,37 @@
+<!--
+Copyright (C) 2023 eSOL Co.,Ltd.
+All rights reserved.
+-->
+
+<robot name="test_robot">
+  <material name="red">
+    <color rgba="1.0 0.0 0.0 1.0"/>
+  </material>
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <!-- メッシュでstlファイルを指定 -->
+        <mesh filename="package://turtlebot3_description/meshes/bases/burger_base.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="red"/>
+      </visual>
+  </link>
+  
+  <link name="body_link">
+    <visual>
+      <geometry>
+        <box size="0.3 0.3 0.2"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <joint name="body_joint" type="fixed">
+    <parent link="base_link"/>
+    <child  link="body_link"/>
+    <origin xyz="0.5 0 0" rpy="0 0 0"/>
+  </joint>
+</robot>

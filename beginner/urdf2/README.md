@@ -251,7 +251,7 @@ URDFでは、3Dのメッシュデータを利用した見た目の設定が可�
 
 `simple_urdf4.urdf`をRvizで表示すると、以下のように表示される。
 
-![simple_urdf4.urdfの表示結果](https://raw.githubusercontent.com/esol-community/ros2_lecture/main/beginner/urdf2/./img/simple_urdf5.png)
+![simple_urdf4.urdfの表示結果](https://raw.githubusercontent.com/esol-community/ros2_lecture/main/beginner/urdf2/./img/simple_urdf4.png)
 
 ### meshタグ
 
@@ -327,7 +327,7 @@ ROS 2では距離の単位にはメートルを使用する。一方で、3Dモ�
 
 `simple_urdf5.urdf`は、3つの直方体`base_link`、`body1_link`、`body2_link`を持つ。それぞれのリンクをつなぐジョイントには、回転ジョイント、直動ジョイントを設定している。`simple_urdf5.urdf`をRvizで表示すると、以下のように表示される。
 
-![simple_urdf5.urdfの表示結果](https://raw.githubusercontent.com/esol-community/ros2_lecture/main/beginner/urdf2/./img/simple_urdf4.png)
+![simple_urdf5.urdfの表示結果](https://raw.githubusercontent.com/esol-community/ros2_lecture/main/beginner/urdf2/./img/simple_urdf5.png)
 
 画像に示すように、別ウィンドウにJoint State Publisherが表示される。このウィンドウ上でスライダーを操作すると、対応する可動ジョイントを動かすことができる。
 

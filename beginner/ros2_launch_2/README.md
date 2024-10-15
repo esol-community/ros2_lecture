@@ -67,7 +67,7 @@ $ tree           # ディレクトリ構成を表示するコマンド
 この記事では、以下の3つの新規ファイルを作成する。  
 
 - [launch_all.launch.py](https://github.com/esol-community/ros2_lecture/tree/main/beginner/ros2_launch_2/./launch/launch_all.launch.py)
-- [launch_event_handler.launch.py](https://github.com/esol-community/ros2_lecture/tree/main/beginner/ros2_launch_2/./launch/launch_timer_handler.lauch.py)
+- [launch_event_handler.launch.py](https://github.com/esol-community/ros2_lecture/tree/main/beginner/ros2_launch_2/./launch/launch_event_handler.launch.py)
 - [param_talker.cpp](https://github.com/esol-community/ros2_lecture/tree/main/beginner/ros2_launch_2/./src/param_talker.cpp)
 
 これらのうち中心になるのは[launch_all.launch.py](https://github.com/esol-community/ros2_lecture/tree/main/beginner/ros2_launch_2/./launch/launch_all.launch.py)である。このlaunchファイルから複数のプログラムを起動する。  

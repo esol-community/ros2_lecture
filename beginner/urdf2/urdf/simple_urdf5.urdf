@@ -1,6 +1,5 @@
 <!--
-Copyright (C) 2023 eSOL Co.,Ltd.
-All rights reserved.
+Copyright (C) 2023 eSOL Co.,Ltd. All rights reserved.
 -->
 
 <robot name="test_robot">
@@ -17,7 +16,7 @@ All rights reserved.
       <material name="red"/>
     </visual>
   </link>
-  
+
   <link name="body1_link">
     <visual>
       <geometry>
@@ -46,7 +45,7 @@ All rights reserved.
       <material name="red"/>
     </visual>
   </link>
-  
+
   <!--直動ジョイント"prismatic"を作成-->
   <joint name="body2_joint" type="prismatic">
     <parent link="body1_link"/>

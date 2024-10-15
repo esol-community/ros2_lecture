@@ -67,7 +67,7 @@ ROS 2のハンズオン教材「実習ROS 2」の目次のページです。
 - [Action通信](https://qiita.com/s-kitajima/items/6f9f544010d49fdbe1d5)  
   クライアント/サーバ型で、実行中の情報をフィードバックして受け取れる通信方式であるActionを解説、実装します。
 
-- ros2 paramを使う1  
+- [ros2 paramを使う1](https://qiita.com/s-kitajima/items/995de6d937a9a938a495)  
   ROS 2ノードに与えるパラメータの概念、CLIツール、基本的な与え方について説明します。
 
 - ros2 paramを使う2  
@@ -89,7 +89,7 @@ ROS 2のハンズオン教材「実習ROS 2」の目次のページです。
 
 #### 開発環境編
 
-- CMakeLists.txtとpackage.xmlの書き方  
+- [CMakeLists.txtとpackage.xmlの書き方](https://qiita.com/s-kitajima/items/3f4c7f2dd2d9e5e5a792)  
   2つのファイルの役割や、書式について説明します。
 
 - ROS 2パッケージのディレクトリ構成  

@@ -284,7 +284,7 @@ ReliabilityポリシーがデフォルトのReliableのままの場合、フレ�
 
 ROS 2公式ドキュメントから、デモの様子の画像を引用して以下に示す。
 
-![qos_best_effort](./img/qos-best-effort.png)
+![qos_best_effort](https://raw.githubusercontent.com/ros2/demos/humble/image_tools/doc/qos-best-effort.png)
 
 ## Rviz2でのQoS指定
 

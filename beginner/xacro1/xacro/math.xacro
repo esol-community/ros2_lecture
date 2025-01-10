@@ -1,0 +1,59 @@
+<!--
+Copyright (C) 2023 eSOL Co.,Ltd. All rights reserved.
+-->
+
+<robot name="math_robot" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:property name="side" value="0.1" />
+  <!-- 定数radiusを定義 -->
+  <xacro:property name="radius" value="0.5" />
+  <material name="red">
+    <color rgba="1.0 0.0 0.0 1.0"/>
+  </material>
+
+  <link name="base_link"/>
+
+  <link name="body0_link">
+    <visual>
+      <geometry>
+        <box size="${side} ${side} ${side}" />
+      </geometry>
+      <material name="red"/>
+    </visual>
+  </link>
+  <joint name="body0_joint" type="fixed">
+    <!-- 数式を利用して位置を指定 -->
+    <origin rpy="0 0 0" xyz="${radius*cos(radians(0))} ${radius*sin(radians(0))} 0"/>
+    <parent link="base_link"/>
+    <child  link="body0_link"/>
+  </joint>
+
+  <link name="body1_link">
+    <visual>
+      <geometry>
+        <box size="${side} ${side} ${side}" />
+      </geometry>
+      <material name="red"/>
+    </visual>
+  </link>
+  <joint name="body1_joint" type="fixed">
+    <!-- 数式を利用して位置を指定 -->
+    <origin rpy="0 0 0" xyz="${radius*cos(radians(30))} ${radius*sin(radians(30))} 0"/>
+    <parent link="base_link"/>
+    <child  link="body1_link"/>
+  </joint>
+
+  <link name="body2_link">
+    <visual>
+      <geometry>
+        <box size="${side} ${side} ${side}" />
+      </geometry>
+      <material name="red"/>
+    </visual>
+  </link>
+  <joint name="body2_joint" type="fixed">
+    <!-- 数式を利用して位置を指定 -->
+    <origin rpy="0 0 0" xyz="${radius*cos(radians(60))} ${radius*sin(radians(60))} 0"/>
+    <parent link="base_link"/>
+    <child  link="body2_link"/>
+  </joint>
+</robot>

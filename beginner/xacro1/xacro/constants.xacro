@@ -1,0 +1,48 @@
+<!--
+Copyright (C) 2023 eSOL Co.,Ltd. All rights reserved.
+-->
+
+<!-- 名前空間の指定 -->
+<robot name="constants_robot" xmlns:xacro="http://ros.org/wiki/xacro">
+  <!-- 定数の定義 -->
+  <xacro:property name="side" value="0.5" />
+
+  <link name="base_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <!-- 定数の利用 -->
+        <box size="${side} ${side} ${side}" />
+      </geometry>
+      <material name="red">
+        <color rgba="1.0 0.0 0.0 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <link name="body1_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="1 1 1"/>
+      <geometry>
+        <!-- 定数の利用 -->
+        <box size="${side} ${side} ${side}" />
+      </geometry>
+      <material name="red">
+        <color rgba="1.0 0.0 0.0 1.0"/>
+      </material>
+    </visual>
+  </link>
+  
+  <link name="body2_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="2 2 2"/>
+      <geometry>
+        <!-- 定数の利用 -->
+        <box size="${side} ${side} ${side}" />
+      </geometry>
+      <material name="red">
+        <color rgba="1.0 0.0 0.0 1.0"/>
+      </material>
+    </visual>
+  </link>
+</robot>

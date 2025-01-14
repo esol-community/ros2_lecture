@@ -267,7 +267,7 @@ float32[] intensities        # intensity data [device-specific units].  If your
 ## 備考
 
 上記はすでに用意されているメッセージを使用しているが、自作した独自のメッセージを使用することもできる。  
-独自のメッセージの作成方法は、[カスタムROSメッセージ](https://github.com/esol-community/ros2_lecture/tree/main/beginner/ros2_interface/../custom_ros2_message/README.md)の記事に記載している。
+独自のメッセージの作成方法は、[カスタムROSメッセージ](https://qiita.com/s-kubota/items/eeaa1914055415d5792b)の記事に記載している。
 
 ## 参考
 

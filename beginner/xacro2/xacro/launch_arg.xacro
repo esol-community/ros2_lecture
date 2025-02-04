@@ -1,0 +1,29 @@
+<!--
+Copyright (C) 2023 eSOL Co.,Ltd. All rights reserved.
+-->
+
+<robot name="test_robot" xmlns:xacro="http://ros.org/wiki/xacro">
+  <!--デフォルト値0.0で変数lengthを定義-->
+  <xacro:arg name="length" default="0.0"/>
+
+  <material name="red">
+    <color rgba="1.0 0.0 0.0 1.0"/>
+  </material>
+
+  <link name="base_link"/>
+
+  <joint name="body_joint" type="fixed">
+    <!--変数lengthを利用-->
+    <origin rpy="0 0 0" xyz="$(arg length) 0 0"/>
+    <parent link="base_link"/>
+    <child  link="body_link"/>
+  </joint>
+  <link name="body_link">
+    <visual>
+      <geometry>
+        <box size="0.1 0.1 0.1" />
+      </geometry>
+      <material name="red"/>
+    </visual>
+  </link>
+</robot>

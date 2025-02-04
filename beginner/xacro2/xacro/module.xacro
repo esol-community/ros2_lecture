@@ -1,0 +1,35 @@
+<!--
+Copyright (C) 2023 eSOL Co.,Ltd. All rights reserved.
+-->
+
+<robot name="test_robot" xmlns:xacro="http://ros.org/wiki/xacro">
+  <material name="red">
+    <color rgba="1.0 0.0 0.0 1.0"/>
+  </material>
+  
+  <!--モジュールの定義-->
+  <xacro:macro name="box_macro" params="prefix parent radius">
+    <joint name="${prefix}_joint" type="fixed">
+      <origin rpy="0 0 0" xyz="${0.5*cos(radians(radius))} ${0.5*sin(radians(radius))} 0"/>
+      <parent link="${parent}"/>
+      <child  link="${prefix}_link"/>
+    </joint>
+
+    <link name="${prefix}_link">
+      <visual>
+        <geometry>
+          <box size="0.1 0.1 0.1" />
+        </geometry>
+        <material name="red"/>
+      </visual>
+    </link>
+  </xacro:macro>  
+
+  <link name="base_link"/>
+
+  <!--モジュールの利用-->
+  <xacro:box_macro prefix="box0" parent="base_link" radius="0"/>
+  <xacro:box_macro prefix="box1" parent="base_link" radius="30"/>
+  <xacro:box_macro prefix="box2" parent="base_link" radius="60"/>
+  <xacro:box_macro prefix="box3" parent="base_link" radius="90"/>
+</robot>

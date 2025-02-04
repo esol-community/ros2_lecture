@@ -1,0 +1,13 @@
+<!--
+Copyright (C) 2023 eSOL Co.,Ltd. All rights reserved.
+-->
+
+<robot name="test_robot" xmlns:xacro="http://ros.org/wiki/xacro">
+  <!--別のxacroファイルをインクルード-->
+  <xacro:include filename="$(find xacro2)/xacro/module.xacro" />
+
+  <!--インクルードしたxacroファイルのモジュールを利用-->
+  <xacro:box_macro prefix="box4" parent="base_link" radius="120"/>
+  <xacro:box_macro prefix="box5" parent="base_link" radius="150"/>
+  <xacro:box_macro prefix="box6" parent="base_link" radius="180"/>
+</robot>

@@ -208,7 +208,7 @@ rclcpp::Subscription<lifecycle_msgs::msg::TransitionEvent>::SharedPtr sub_state_
 
 現在のLifecycleの取得は`get_state()`関数（サービス名：`lifecycle_talker/get_state`）で行っている。  
 また、現在のLifecycleの遷移は`change_state()`関数（サービス名：`lifecycle_talker/change_state`）で行っている。  
-サービス通信の処理部分は[Service通信](https://github.com/esol-community/ros2_lecture/tree/main/advanced/lifecycle_pubsub/../../beginner/service_comm/README.md)と同様なので、説明は省略する。  
+サービス通信の処理部分は[Service通信](https://qiita.com/s-kitajima/items/29607ff86a656e4d6099)と同様なので、説明は省略する。  
 
 ### ビルド
 

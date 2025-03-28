@@ -1,0 +1,7 @@
+param_talker_advanced:
+  ros__parameters:
+    integer_param: 10
+    string_param: "Hello world"
+    boolean_params: [true, true, false, true]
+    list_param:
+      double_param : 3.14

@@ -1,0 +1,3 @@
+/joint_states:
+  reliability: best_effort
+  history: keep_all
